@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #E5E5E5;
+  background-color: #181e26;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 950px;
+  height: 501px;
+  padding-top: 51px;
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
+  background: #101317;
+  box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  
+}
+
+
+.container .individualUser {
+  display: flex;
+  border: 1px #E5E5E5 solid;
+  height: 80px;
+  width: 920px;
+  margin-top: 10px;
+  
+  background: #1E262F;
+  border-radius: 10px;
+
+}
+
+.headings {
+  display: flex;
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+}
+
+.box-1 {
+  margin-left: 290px;
+}
+
+.box-2 {
+  margin-left: 80px;
+}
+
+.box-3 {
+  margin-left: 90px;
+}
+
+.Circular-progress-bar {
+
+box-sizing: border-box;
+width: 60px;
+height: 60px;
+margin-left: 86px;
+padding-top: 10px;
+}
+
+.user-image {
+  margin-top: 18px;
+  margin-left: 11px;
+
+}
+
+.user-name {
+
+width: 114px;
+height: 17px;
+margin-left: 18.32px;
+margin-top: 23px;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+color: #FFFFFF;
+}
+
+.user-email, .target {
+width: 140px;
+height: 12px;
+font-size: 10px;
+font-weight: 500;
+line-height: 12px;
+display: flex;
+align-items: center;
+color: #BDBCBE;
+}
+
+.user-target {
+width: 22px;
+height: 20px;
+margin-top: 24px;
+margin-left: 17px;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+color: #FFFFFF;
+}
+
+.date {
+margin-left: 74.17px;
+margin-top: 14px;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.scheduledDate {
+  margin-top: 20px;
+}
+
+.angle-right {
+
+width: 30px;
+height: 60px;
+margin-left: 18px;
+margin-top: 10px;
+
+background: #101317;
+border-radius: 8px;
+}
+
+.angle-right div{
+  margin-left: 11px;
+  margin-top: 21px;
+}
+
+.Colored-progress-bar {
+  width: 56.96px;
+height: 56.96px;
+margin-top: 11.19px;
+margin-left: 65px;
+box-shadow: -10px 4px 29p;
+}
+
+.bell-icon {
+width: 40px;
+height: 40px;
+margin-left: 57px;
+margin-top: 20px;
+align-items: center;
+background: #36F5C7;
+border-radius: 8px;
+}
+
+.bell {
+width: 18.75px;
+height: 20.84px;
+margin-top: 9.08px;
+margin-left: 12.5px;
+}
+
+.rightmost {
+  margin-left: 30px;
+}
+
+.colored-text {
+  margin-top: -40px;
+  width: 30px;
+height: 15px;
+margin-left: 15px;
+font-weight: 700;
+font-size: 12px;
+line-height: 10px;
+align-items: center;
+color: #FFFFFF;
+}
+
+.colories-text {
+  font-size: 8px;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+color: #BDBCBE;
+font-style: normal;
+line-height: 10px;
 }
