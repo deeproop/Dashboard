@@ -149,11 +149,11 @@ function App() {
               </div>
 
               <div className="date">
-                <div className="performed-date">
-                  <FontAwesomeIcon icon={faUserCheck} /> {user.performedDate}
+                <div >
+                  <FontAwesomeIcon icon={faUserCheck} style={{marginRight: 2,marginTop: 2, height: 16.25}} /> {user.performedDate}
                 </div>
                 <div className="scheduled-date">
-                  <FontAwesomeIcon icon={faCalendarCheck} />{" "}
+                  <FontAwesomeIcon icon={faCalendarCheck} style={{marginRight: 4,marginTop: 13.04, height: 21.13}} />{" "}
                   {user.scheduledDate}
                 </div>
               </div>
