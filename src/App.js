@@ -129,7 +129,7 @@ function App() {
                 <div className="increment">
                   <FontAwesomeIcon icon={faPlus} className="plus" />
                 </div>
-                {user.stepsTarget}
+                <div className="steps-target">{user.stepsTarget}</div>
                 <div className="target">target</div>
 
                 <div className="increment">
