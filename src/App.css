@@ -54,19 +54,25 @@ body {
 .steps {
   width: 1.385rem;
   height: 2rem;
+  margin-right: 1rem;
 }
 
 .box-2 {
-  margin-left: 8rem;
+  margin-left: 7rem;
+}
+
+.Dumbell {
+margin-right: 1rem;
 }
 
 .box-3 {
-  margin-left: 9rem;
+  margin-left: 7rem;
 }
 
 .bell-nutrition {
   width: 2.4rem;
   height: 1.92rem;
+  margin-right: 1rem;
 }
 
 .Circular-progress-bar {

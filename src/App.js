@@ -86,7 +86,7 @@ function App() {
             <FontAwesomeIcon icon={faPersonWalking} className="steps" /> Steps
           </p>
           <p className="box-2">
-            <FontAwesomeIcon icon={faDumbbell} transform={{ rotate: 140 }} />{" "}
+            <FontAwesomeIcon icon={faDumbbell} className="Dumbell" transform={{ rotate: 140 }} />{" "}
             Workout
           </p>
           <p className="box-3">
