@@ -5,6 +5,8 @@ import {
   faBellConcierge,
   faUserCheck,
   faAngleRight,
+  faPlus,
+  faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarCheck, faBell } from "@fortawesome/free-regular-svg-icons";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
@@ -76,7 +78,6 @@ function App() {
     { title: "x", value: 2547, color: "#F45C84" },
   ];
 
-
   return (
     <div className="App">
       <div className="container">
@@ -85,10 +86,15 @@ function App() {
             <FontAwesomeIcon icon={faPersonWalking} className="steps" /> Steps
           </p>
           <p className="box-2">
-            <FontAwesomeIcon icon={faDumbbell} transform={{ rotate: 140 }} /> Workout
+            <FontAwesomeIcon icon={faDumbbell} transform={{ rotate: 140 }} />{" "}
+            Workout
           </p>
           <p className="box-3">
-            <FontAwesomeIcon icon={faBellConcierge} className="bell-nutrition" /> Nutrition
+            <FontAwesomeIcon
+              icon={faBellConcierge}
+              className="bell-nutrition"
+            />{" "}
+            Nutrition
           </p>
         </div>
         {details.map((user, key) => {
@@ -102,14 +108,15 @@ function App() {
                 <div className="user-email">{user.email}</div>
               </div>
 
-              <div
-                className="Circular-progress-bar"
-              >
-                <CircularProgressbarWithChildren className="circular-bar"
+              <div className="Circular-progress-bar">
+                <CircularProgressbarWithChildren
+                  className="circular-bar"
                   value={66}
-                  styles={{path: {
-                    stroke: "#7FD18C"
-                  }}}
+                  styles={{
+                    path: {
+                      stroke: "#7FD18C",
+                    },
+                  }}
                 >
                   <div className="walked">
                     <strong className="steps-walked">{user.stepsWalked}</strong>{" "}
@@ -119,16 +126,28 @@ function App() {
               </div>
 
               <div className="user-target">
+                <div className="increment">
+                  <FontAwesomeIcon icon={faPlus} className="plus" />
+                </div>
                 {user.stepsTarget}
                 <div className="target">target</div>
+
+                <div className="increment">
+                  <FontAwesomeIcon icon={faMinus} className="plus" />
+                </div>
               </div>
 
               <div className="date">
-                <div >
-                  <FontAwesomeIcon icon={faUserCheck} className="user-check" /> {user.performedDate}
+                <div>
+                  <FontAwesomeIcon icon={faUserCheck} className="user-check" />{" "}
+                  {user.performedDate}
                 </div>
                 <div className="scheduled-date">
-                  <FontAwesomeIcon icon={faCalendarCheck} className="calender-check" />{user.scheduledDate}
+                  <FontAwesomeIcon
+                    icon={faCalendarCheck}
+                    className="calender-check"
+                  />
+                  {user.scheduledDate}
                 </div>
               </div>
 
@@ -163,8 +182,15 @@ function App() {
               </div>
 
               <div className="user-target">
+                <div className="increment">
+                  <FontAwesomeIcon icon={faPlus} className="plus" />
+                </div>
                 {user.calorieTarget}
                 <div className="target">target</div>
+
+                <div className="increment">
+                  <FontAwesomeIcon icon={faMinus} className="plus" />
+                </div>
               </div>
 
               <div className="rightmost angle-right rightmost">
@@ -174,9 +200,7 @@ function App() {
               </div>
 
               <div className="bell-icon">
-                
-                  <FontAwesomeIcon icon={faBell} className="bell" />
-    
+                <FontAwesomeIcon icon={faBell} className="bell" />
               </div>
             </div>
           );

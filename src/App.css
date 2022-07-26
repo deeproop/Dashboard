@@ -148,7 +148,7 @@ body {
 .user-target {
   width: 2.2rem;
   height: 2rem;
-  margin-top: 2.4rem;
+  margin-top: .1rem;
   margin-left: 1.7rem;
   font-weight: 700;
   font-size: 1.6rem;
@@ -257,4 +257,23 @@ body {
   html {
     font-size: 45%;
   }
+}
+
+
+/* level-2 */
+
+.increment {
+width: 3rem;
+height: 1.6rem;
+margin-top: .4rem;
+background: #101317;
+border-radius: 4px;
+margin-bottom: .2rem;
+}
+
+.plus {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: .3rem;
+
 }
