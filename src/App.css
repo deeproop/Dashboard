@@ -23,14 +23,14 @@ body {
   flex-direction: column;
   padding-left: 2.5rem;
   background: #101317;
-  box-shadow: .2rem .3rem 4.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.2rem 0.3rem 4.2rem rgba(0, 0, 0, 0.5);
   border-radius: 1.6rem;
   margin-top: 4.3rem;
 }
 
 .container .individualUser {
   display: flex;
-  border: .1rem #e5e5e5 solid;
+  border: 0.1rem #e5e5e5 solid;
   height: 8rem;
   width: 92rem;
   margin-top: 1rem;
@@ -130,12 +130,11 @@ body {
   display: flex;
   align-items: center;
   color: #bdbcbe;
-  
 }
 
 .walked {
-  font-size: .8rem;
-  margin-top: .4rem;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
   margin-left: 1.5rem;
   color: #bdbcbe;
 }
@@ -148,7 +147,7 @@ body {
 .user-target {
   width: 2.2rem;
   height: 2rem;
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   margin-left: 1.7rem;
   font-weight: 700;
   font-size: 1.6rem;
@@ -158,7 +157,7 @@ body {
 }
 
 .steps-target {
-  margin-left: .3rem;
+  margin-left: 0.3rem;
 }
 
 .date {
@@ -171,13 +170,13 @@ body {
 }
 
 .user-check {
-  margin-right: .2rem;
-  margin-top: .2rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
   height: 1.625rem;
 }
 
 .calender-check {
-  margin-right: .8rem;
+  margin-right: 0.8rem;
   margin-top: 1.104rem;
   height: 2.113rem;
 }
@@ -189,7 +188,7 @@ body {
   margin-top: 1rem;
 
   background: #101317;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .angle-right div {
@@ -202,7 +201,7 @@ body {
   height: 5.696rem;
   margin-top: 1.319rem;
   margin-left: 6.5rem;
-  box-shadow: -.4rem .4rem 2.9rem #272727;
+  box-shadow: -0.4rem 0.4rem 2.9rem #272727;
 }
 
 .bell-icon {
@@ -212,14 +211,14 @@ body {
   margin-top: 2rem;
   align-items: center;
   background: #36f5c7;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .bell {
   color: black;
   width: 1.875rem;
   height: 2.084rem;
-  margin-top: .908rem;
+  margin-top: 0.908rem;
   margin-left: 1rem;
 }
 
@@ -232,53 +231,50 @@ body {
   width: 3rem;
   height: 1.5rem;
   margin-left: 1.4rem;
-  padding-top: .2rem;
+  padding-top: 0.2rem;
   font-weight: 700;
   font-size: 1.2rem;
-  line-height: .8rem;
+  line-height: 0.8rem;
   align-items: center;
   color: #ffffff;
 }
 
 .calories-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
   align-items: center;
   color: #bdbcbe;
   font-style: normal;
   line-height: 1rem;
-  margin-top: .4rem;
-  
+  margin-top: 0.4rem;
 }
 
-@media(max-width: 998px) {
+@media (max-width: 998px) {
   html {
     font-size: 55%;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   html {
     font-size: 45%;
   }
 }
 
-
 /* level-2 */
 
 .increment {
-width: 3rem;
-height: 1.6rem;
-margin-top: .4rem;
-background: #101317;
-border-radius: 4px;
-margin-bottom: .2rem;
+  width: 3rem;
+  height: 1.6rem;
+  margin-top: 0.4rem;
+  background: #101317;
+  border-radius: 4px;
+  margin-bottom: 0.2rem;
 }
 
 .plus {
   width: 1rem;
   height: 1rem;
-  margin-bottom: .3rem;
-  padding-bottom: .1rem;
-
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.1rem;
 }
