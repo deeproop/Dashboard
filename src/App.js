@@ -162,7 +162,7 @@ function App() {
                   center={[50, 50]}
                   data={data}
                   lengthAngle={360}
-                  lineWidth={15}
+                  lineWidth={25}
                   paddingAngle={0}
                   radius={50}
                   rounded
