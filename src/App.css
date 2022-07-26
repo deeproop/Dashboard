@@ -1,198 +1,260 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #e5e5e5;
   background-color: #181e26;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .container {
-  width: 950px;
-  height: 501px;
-  padding-top: 51px;
+  width: 95rem;
+  height: 50.1rem;
+  padding-top: 5.1rem;
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  padding-left: 2.5rem;
   background: #101317;
-  box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
-  margin-top: 43px;
+  box-shadow: .2rem .3rem 4.2rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.6rem;
+  margin-top: 4.3rem;
 }
 
 .container .individualUser {
   display: flex;
-  border: 1px #e5e5e5 solid;
-  height: 80px;
-  width: 920px;
-  margin-top: 10px;
+  border: .1rem #e5e5e5 solid;
+  height: 8rem;
+  width: 92rem;
+  margin-top: 1rem;
   background: #1e262f;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .headings {
   display: flex;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  margin-top: -30px;
-  margin-bottom: 10px;
-  
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-top: -3rem;
+  margin-bottom: 1rem;
 }
 
 .box-1 {
-  margin-left: 290px;
+  margin-left: 29rem;
+}
+
+.steps {
+  width: 1.385rem;
+  height: 2rem;
 }
 
 .box-2 {
-  margin-left: 80px;
+  margin-left: 8rem;
 }
 
 .box-3 {
-  margin-left: 90px;
+  margin-left: 9rem;
+}
+
+.bell-nutrition {
+  width: 2.4rem;
+  height: 1.92rem;
 }
 
 .Circular-progress-bar {
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  margin-left: 86px;
-  padding-top: 10px;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 8.6rem;
+  padding-top: 1rem;
   align-items: center;
 }
 
-.circular-bar trail{
+.circular-bar trail {
   stroke-linecap: butt;
   transform: rotate(-126deg);
   transform-origin: center center;
 }
 
-.circular-bar path{
+.circular-bar path {
   stroke-linecap: butt;
   transform: rotate(-260deg);
   transform-origin: center center;
 }
 
-.circular-bar text{
+.circular-bar text {
   fill: #ddd;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .user-image {
-  margin-top: 18px;
-  margin-left: 11px;
+  width: 3.968rem;
+  height: 4rem;
+  margin-top: 1.8rem;
+  margin-left: 1.1rem;
+}
+
+.img {
+  height: 4rem;
+  width: 3.968rem;
 }
 
 .user-name {
-  width: 114px;
-  height: 17px;
-  margin-left: 18.32px;
-  margin-top: 23px;
+  width: 11.4rem;
+  height: 1.7rem;
+  margin-left: 1.832rem;
+  margin-top: 2.3rem;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
   align-items: center;
   color: #ffffff;
 }
 
 .user-email,
 .target {
-  width: 140px;
-  height: 12px;
-  font-size: 10px;
+  height: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 1.2rem;
   display: flex;
   align-items: center;
   color: #bdbcbe;
+  
+}
+
+.walked {
+  font-size: .8rem;
+  margin-top: .4rem;
+  margin-left: 1.5rem;
+  color: #bdbcbe;
+}
+
+.steps-walked {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .user-target {
-  width: 22px;
-  height: 20px;
-  margin-top: 24px;
-  margin-left: 17px;
+  width: 2.2rem;
+  height: 2rem;
+  margin-top: 2.4rem;
+  margin-left: 1.7rem;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
   color: #ffffff;
 }
 
 .date {
-  margin-left: 74.17px;
-  margin-top: 14px;
+  margin-left: 7.417rem;
+  margin-top: 1.4rem;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   align-items: center;
   text-transform: capitalize;
 }
 
+.user-check {
+  margin-right: .2rem;
+  margin-top: .2rem;
+  height: 1.625rem;
+}
+
+.calender-check {
+  margin-right: .8rem;
+  margin-top: 1.104rem;
+  height: 2.113rem;
+}
 
 .angle-right {
-  width: 30px;
-  height: 60px;
-  margin-left: 18px;
-  margin-top: 10px;
+  width: 3rem;
+  height: 6rem;
+  margin-left: 1.8rem;
+  margin-top: 1rem;
 
   background: #101317;
-  border-radius: 8px;
+  border-radius: .8rem;
 }
 
 .angle-right div {
-  margin-left: 11px;
-  margin-top: 21px;
+  margin-left: 1.1rem;
+  margin-top: 2.1rem;
 }
 
 .Colored-progress-bar {
-  width: 56.96px;
-  height: 56.96px;
-  margin-top: 11.19px;
-  margin-left: 65px;
-  box-shadow: -10px 4px 29p;
+  width: 5.696rem;
+  height: 5.696rem;
+  margin-top: 1.319rem;
+  margin-left: 6.5rem;
+  box-shadow: -.4rem .4rem 2.9rem #272727;
 }
 
 .bell-icon {
-  width: 40px;
-  height: 40px;
-  margin-left: 57px;
-  margin-top: 20px;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 5.7rem;
+  margin-top: 2rem;
   align-items: center;
   background: #36f5c7;
-  border-radius: 8px;
+  border-radius: .8rem;
 }
 
 .bell {
   color: black;
-  width: 18.75px;
-  height: 20.84px;
-  margin-top: 9.08px;
-  margin-left: 10px;
+  width: 1.875rem;
+  height: 2.084rem;
+  margin-top: .908rem;
+  margin-left: 1rem;
 }
 
 .rightmost {
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 
 .colored-text {
-  margin-top: -40px;
-  width: 30px;
-  height: 15px;
-  margin-left: 15px;
+  margin-top: -4rem;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 1.4rem;
+  padding-top: .2rem;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 10px;
+  font-size: 1.2rem;
+  line-height: .8rem;
   align-items: center;
   color: #ffffff;
 }
 
-.colories-text {
-  font-size: 8px;
+.calories-text {
+  font-size: .8rem;
   font-weight: 500;
   align-items: center;
   color: #bdbcbe;
   font-style: normal;
-  line-height: 10px;
+  line-height: 1rem;
+  margin-top: .4rem;
+  
+}
+
+@media(max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
 }

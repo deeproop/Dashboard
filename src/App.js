@@ -82,20 +82,20 @@ function App() {
       <div className="container">
         <div className="headings">
           <p className="box-1">
-            <FontAwesomeIcon icon={faPersonWalking} style={{width: 13.85, height: 20}} /> Steps
+            <FontAwesomeIcon icon={faPersonWalking} className="steps" /> Steps
           </p>
           <p className="box-2">
             <FontAwesomeIcon icon={faDumbbell} transform={{ rotate: 140 }} /> Workout
           </p>
           <p className="box-3">
-            <FontAwesomeIcon icon={faBellConcierge} style={{width: 24, height: 19.2}}/> Nutrition
+            <FontAwesomeIcon icon={faBellConcierge} className="bell-nutrition" /> Nutrition
           </p>
         </div>
         {details.map((user, key) => {
           return (
             <div className="individualUser">
               <div className="user-image">
-                <img src={image} style={{ height: 40, width: 39.68 }} />
+                <img src={image} className="img" />
               </div>
               <div className="user-name">
                 {user.name}
@@ -104,7 +104,6 @@ function App() {
 
               <div
                 className="Circular-progress-bar"
-                style={{ width: 60, height: 60 }}
               >
                 <CircularProgressbarWithChildren className="circular-bar"
                   value={66}
@@ -112,8 +111,8 @@ function App() {
                     stroke: "#7FD18C"
                   }}}
                 >
-                  <div style={{ fontSize: 8, marginTop: 5, marginLeft: 16 }}>
-                    <strong style={{ fontSize: 12 }}>{user.stepsWalked}</strong>{" "}
+                  <div className="walked">
+                    <strong className="steps-walked">{user.stepsWalked}</strong>{" "}
                     walked
                   </div>
                 </CircularProgressbarWithChildren>
@@ -126,10 +125,10 @@ function App() {
 
               <div className="date">
                 <div >
-                  <FontAwesomeIcon icon={faUserCheck} style={{marginRight: 2,marginTop: 2, height: 16.25}} /> {user.performedDate}
+                  <FontAwesomeIcon icon={faUserCheck} className="user-check" /> {user.performedDate}
                 </div>
                 <div className="scheduled-date">
-                  <FontAwesomeIcon icon={faCalendarCheck} style={{marginRight: 8,marginTop: 11.04, height: 21.13}} />{user.scheduledDate}
+                  <FontAwesomeIcon icon={faCalendarCheck} className="calender-check" />{user.scheduledDate}
                 </div>
               </div>
 
@@ -159,7 +158,7 @@ function App() {
                 />
                 <div className="colored-text">
                   {user.calorieIntake}
-                  <div className="colories-text">calories</div>
+                  <div className="calories-text">calories</div>
                 </div>
               </div>
 
