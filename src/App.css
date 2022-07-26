@@ -4,6 +4,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #e5e5e5;
   background-color: #181e26;
+  width: 100%;
 }
 
 .container {
@@ -58,6 +59,24 @@ body {
   height: 60px;
   margin-left: 86px;
   padding-top: 10px;
+  align-items: center;
+}
+
+.circular-bar trail{
+  stroke-linecap: butt;
+  transform: rotate(-126deg);
+  transform-origin: center center;
+}
+
+.circular-bar path{
+  stroke-linecap: butt;
+  transform: rotate(-260deg);
+  transform-origin: center center;
+}
+
+.circular-bar text{
+  fill: #ddd;
+  font-size: 12px;
 }
 
 .user-image {
@@ -146,10 +165,11 @@ body {
 }
 
 .bell {
+  color: black;
   width: 18.75px;
   height: 20.84px;
   margin-top: 9.08px;
-  margin-left: 12.5px;
+  margin-left: 10px;
 }
 
 .rightmost {

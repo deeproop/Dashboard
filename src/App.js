@@ -76,29 +76,19 @@ function App() {
     { title: "x", value: 2547, color: "#F45C84" },
   ];
 
-  const value = 2547 / 4000;
-
-  const calcColor = (percent, start, end) => {
-    let a = percent / 100,
-      b = (end - start) * a,
-      c = b + start;
-
-    // return an CSS hsl color string
-    return "hsl(" + c + ", 100%, 50%)";
-  };
 
   return (
     <div className="App">
       <div className="container">
         <div className="headings">
           <p className="box-1">
-            <FontAwesomeIcon icon={faPersonWalking} /> Steps
+            <FontAwesomeIcon icon={faPersonWalking} style={{width: 13.85, height: 20}} /> Steps
           </p>
           <p className="box-2">
-            <FontAwesomeIcon icon={faDumbbell} /> Workout
+            <FontAwesomeIcon icon={faDumbbell} transform={{ rotate: 140 }} /> Workout
           </p>
           <p className="box-3">
-            <FontAwesomeIcon icon={faBellConcierge} /> Nutrition
+            <FontAwesomeIcon icon={faBellConcierge} style={{width: 24, height: 19.2}}/> Nutrition
           </p>
         </div>
         {details.map((user, key) => {
@@ -116,27 +106,13 @@ function App() {
                 className="Circular-progress-bar"
                 style={{ width: 60, height: 60 }}
               >
-                <CircularProgressbarWithChildren
+                <CircularProgressbarWithChildren className="circular-bar"
                   value={66}
-                  styles={{
-                    trail: {
-                      strokeLinecap: "butt",
-                      transform: "rotate(-126deg)",
-                      transformOrigin: "center center",
-                    },
-                    path: {
-                      strokeLinecap: "butt",
-                      transform: "rotate(-260deg)",
-                      transformOrigin: "center center",
-                      stroke: "#7FD18C",
-                    },
-                    text: {
-                      fill: "#ddd",
-                      fontSize: "12",
-                    },
-                  }}
+                  styles={{path: {
+                    stroke: "#7FD18C"
+                  }}}
                 >
-                  <div style={{ fontSize: 8, marginTop: 8, marginLeft: 17 }}>
+                  <div style={{ fontSize: 8, marginTop: 5, marginLeft: 16 }}>
                     <strong style={{ fontSize: 12 }}>{user.stepsWalked}</strong>{" "}
                     walked
                   </div>
@@ -153,8 +129,7 @@ function App() {
                   <FontAwesomeIcon icon={faUserCheck} style={{marginRight: 2,marginTop: 2, height: 16.25}} /> {user.performedDate}
                 </div>
                 <div className="scheduled-date">
-                  <FontAwesomeIcon icon={faCalendarCheck} style={{marginRight: 4,marginTop: 13.04, height: 21.13}} />{" "}
-                  {user.scheduledDate}
+                  <FontAwesomeIcon icon={faCalendarCheck} style={{marginRight: 8,marginTop: 11.04, height: 21.13}} />{user.scheduledDate}
                 </div>
               </div>
 
@@ -200,9 +175,9 @@ function App() {
               </div>
 
               <div className="bell-icon">
-                <div className="bell">
-                  <FontAwesomeIcon icon={faBell} color="black" />
-                </div>
+                
+                  <FontAwesomeIcon icon={faBell} className="bell" />
+    
               </div>
             </div>
           );
